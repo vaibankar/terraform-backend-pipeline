@@ -1,4 +1,12 @@
 terraform {
+backend "s3" {
+    bucket = "zomato_bucket"
+    dynamodb_table  = "state-lock"
+    key = "backend/terraform.tfstate"
+    encrypt = true
+    region = "us-east-2"
+    
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
