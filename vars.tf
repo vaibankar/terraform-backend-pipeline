@@ -10,6 +10,7 @@ variable "region" {
 
 variable "environment" {
   description = "Deployment Environment"
+  default     =  "prod"
 }
 
 variable "cidr_block" {
@@ -55,6 +56,7 @@ variable "ecr_name" {
 }
 variable "project" {
     description = "Project Environment"
+    default     = "zomato"
   
 }
 variable "tags" {
