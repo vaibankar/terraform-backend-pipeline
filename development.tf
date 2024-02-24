@@ -44,17 +44,7 @@ module "eks_cluster" {
 
   max_size         = 3
 }
-module "s3" {
-  source           = "./module/s3"
-  bucket_name      = var.bucket_name
-}
 
-module "dynamodb" {
-  source                        = "./module/dynamodb"
-  dynamodb_table_name           = var.dynamodb_table_name
-  dynamodb_hash_key             = var.dynamodb_hash_key
-  dynamodb_billing_mode         = var.dynamodb_billing_mode
-}
 module "ecr" {
     source               = "./module/ecr"
     environment          = var.environment
