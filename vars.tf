@@ -46,29 +46,7 @@ variable "key_name" {
   default     = "tf-key"
 }
 
-variable "bucket_name" {
-  description = "The name of the S3 bucket"
-  type        = string
-  default = "zomato-adrak-lasan"
-}
 
-variable "dynamodb_table_name" {
-  description = "The name of the DynamoDB table"
-  type        = string
-  default     = "zomato-terraform-lock"
-}
-
-variable "dynamodb_hash_key" {
-  description = "The hash key of the DynamoDB table"
-  type        = string
-  default     = "LockId"
-}
-
-variable "dynamodb_billing_mode" {
-  description = "The billing mode for the DynamoDB table"
-  type        = string
-  default     = "PAY_PER_REQUEST"
-}
 variable "ecr_name" {
     description = "The name of the repository"
     type        = string
