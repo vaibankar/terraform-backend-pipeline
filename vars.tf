@@ -5,7 +5,7 @@ variable "AWS_SECRET_KEY" {
   default = "MEhK0/pNYjlI1YcFPQa/X8BZUlz8hQPnw7VfpPN5"
 }
 variable "region" {
-  default = "ap-east-1"
+  default = "ap-south-1"
 }
 
 variable "environment" {
