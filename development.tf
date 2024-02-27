@@ -43,6 +43,7 @@ module "eks_cluster" {
   min_size         = 1
 
   max_size         = 3
+  ami_type         = "AL2_x86_64"
 }
 
 module "ecr" {
