@@ -16,14 +16,14 @@ module "Myvpc" {
   availability_zones   = local.production_availability_zones
 
 }
-# module "zomato" {
-   # source                     = "./module/ec2"
-   # ami                        = var.ami
-   # instance_type              = var.instance_type
-   # key_name                   = var.key_name
-   # subnet_id                  = module.Myvpc.public_subnets_id[0]
-   # default_security_group_ids = module.Myvpc.default_security_group_ids
- # }
+ module "zomato" {
+    source                     = "./module/ec2"
+    ami                        = var.ami
+    instance_type              = var.instance_type
+    key_name                   = var.key_name
+    subnet_id                  = module.Myvpc.public_subnets_id[0]
+    default_security_group_ids = module.Myvpc.default_security_group_ids
+  }
 
 module "eks_cluster" {
   source          = "./module/eks"
