@@ -59,6 +59,7 @@ resource "aws_eks_node_group" "example" {
     desired_size = 1 #var.desired_capacity
     min_size     = 1 #var.min_size
     max_size     = 1 #var.max_size
+    ami_type     = "AL2_x86_64"
     
   }
 
