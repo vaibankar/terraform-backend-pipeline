@@ -52,13 +52,13 @@ resource "aws_eks_node_group" "example" {
   cluster_name    = aws_eks_cluster.cluster.name
   node_group_name = "example-workers"
   node_role_arn   = aws_iam_role.example.arn
-  instance_types = ["t3.small"]
+  instance_types = ["t3.micro"]
 
 
  scaling_config {
-    desired_size = 1 #var.desired_capacity
-    min_size     = 1 #var.min_size
-    max_size     = 1 #var.max_size
+    desired_size = 2 #var.desired_capacity
+    min_size     = 2 #var.min_size
+    max_size     = 2 #var.max_size
     
     
   }
