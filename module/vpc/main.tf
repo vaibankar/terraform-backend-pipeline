@@ -21,7 +21,7 @@ resource "aws_internet_gateway" "ig" {
 
 #CREATING ELASTIC IP (EIP) FOR NAT
 resource "aws_eip" "nat_eip" {
-  vpc        = true
+  #vpc        = true
   depends_on = [aws_internet_gateway.ig]
 }
 # CREATING  NAT GATEWAY
