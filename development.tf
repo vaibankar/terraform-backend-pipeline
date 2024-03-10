@@ -28,7 +28,7 @@ module "Myvpc" {
 module "eks_cluster" {
   source          = "./module/eks"
 
-  cluster_name    = "my-eks-cluster"
+  cluster_name    = var.cluster_name
 
   
 
