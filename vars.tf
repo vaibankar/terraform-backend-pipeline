@@ -51,12 +51,12 @@ variable "key_name" {
 variable "ecr_name" {
     description = "The name of the repository"
     type        = string
-    default = "zomato-ecr"
+    default = "Netflix-ecr"
   
 }
 variable "project" {
     description = "Project Environment"
-    default     = "zomato"
+    default     = "Netflix"
   
 }
 variable "tags" {
