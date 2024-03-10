@@ -1,6 +1,6 @@
 
 
-resource "aws_instance" "zomato" {
+resource "aws_instance" "Netflix" {
   ami           = var.ami
   instance_type = var.instance_type
   key_name      = var.key_name
@@ -13,7 +13,7 @@ resource "aws_instance" "zomato" {
 
 
   tags = {
-    Name = "zomato"
+    Name = "Netflix"
   }
 }
 
