@@ -9,7 +9,6 @@ variable "project" {
 variable "ecr_name" {
     description = "The name of the ecr registory"
     type = string
-    default = " "
   
 }
 variable "image_tag_mutability" {
