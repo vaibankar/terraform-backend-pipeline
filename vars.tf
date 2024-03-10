@@ -53,7 +53,7 @@ variable "key_name" {
 variable "ecr_name" {
     description = "The name of the repository"
     type        = string
-    default = "Netflix-ecr"
+    default = "netflix-ecr"
   
 }
 variable "project" {
