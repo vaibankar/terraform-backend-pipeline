@@ -33,8 +33,10 @@ variable "private_subnets_cidr" {
 variable "instance_type" {
   description = "This is a instance type"
   default = "t2.micro"
-  
-
+}
+variable "cluster_name" {
+    description = "cluster name"
+    default     = "Netflix-cluster"
 }
 
 variable "ami" {
